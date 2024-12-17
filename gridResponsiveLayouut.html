@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+           max-width: 1200px;
+        }
+        main> section {
+            margin-top: 20px;
+        }
+        .sec1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sec1>div {
+            height: 100px;
+            background-color: #f1962d;
+            flex: 1;
+            margin-inline: 5px;
+            
+        }
+        .sec2 {
+            height: 300px;
+            background-color: #b0f01d;
+            margin: 5px;
+
+        }
+        .sec3{
+            display: flex;
+        }
+        .sec3>div{
+            background-color: #0878e0;
+            flex: 1;
+            margin-inline: 5px;
+            height: 250px;
+        }
+        .sec4{
+            display: flex;
+            justify-content: space-between;
+        }
+        .sec4>div{
+            height: 200px;
+            background-color: #7a7a7a;
+            width: 280px ;
+            margin-inline: 5px;
+        }
+        @media(max-width: 768px)
+        {
+            .sec1{
+                display: block;
+            }
+        .sec1>div{
+            margin-bottom: 5px;
+        }
+        .sec3{
+            display: block;
+        }
+        .sec3>div{
+            margin-bottom: 5px;
+            height: 150px;
+        }
+        .sec4{
+            flex-wrap: wrap;
+        }
+        .sec4>div{
+            width: 45%;
+            height: 100px;
+            margin: 5px;
+        }
+      
+        }
+        @media( max-width: 425px){
+            .sec4>div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="sec1">
+            <div></div>
+            <div></div>
+        </section>
+        <section class="sec2"></section>
+        <section class="sec3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section class="sec4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+</body>
+</html>
